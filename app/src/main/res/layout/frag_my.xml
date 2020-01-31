@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_height="3px"
+        android:layout_marginTop="3dp"
+        android:background="#393939"
+        android:layout_width="fill_parent"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:src="@drawable/main"/>
+
+    <View
+        android:layout_height="5px"
+        android:background="#393939"
+        android:layout_width="fill_parent"/>
+
+    <View
+        android:layout_height="3px"
+        android:layout_marginTop="3dp"
+        android:background="#393939"
+        android:layout_width="fill_parent"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.76">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/fm_imgUser"
+                android:layout_weight="0.35"
+                android:src="@drawable/user"
+                android:padding="15dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.65"
+                android:weightSum="1"
+                android:gravity="bottom"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:text="이메일"
+                    android:id="@+id/fm_txtId"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:textSize="10dp"
+                        android:text="정보 수정"
+                        android:id="@+id/fm_btnWriting"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/sbtn_sample" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/fm_btnModify"
+                        android:textSize="10dp"
+                        android:layout_weight="0.25"
+                        android:layout_marginLeft="5dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_height="3px"
+            android:background="#393939"
+            android:layout_width="fill_parent"/>
+
+        <View
+            android:layout_height="5px"
+            android:background="#393939"
+            android:layout_marginTop="3dp"
+            android:layout_width="fill_parent"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.65">
+
+            <View
+                android:layout_height="3px"
+                android:background="#393939"
+                android:layout_width="fill_parent"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fm_lyContact">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="오류신고 및 문의"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/sample_arrow"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_height="3px"
+                android:background="#393939"
+                android:layout_width="fill_parent"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fm_lyTutorial">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="내 게시물 삭제"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/sample_arrow"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_height="3px"
+                android:background="#393939"
+                android:layout_width="fill_parent"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fm_lyWithdraw">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="탈퇴하기"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/sample_arrow"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_height="3px"
+                android:background="#393939"
+                android:layout_width="fill_parent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

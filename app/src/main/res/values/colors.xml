@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#19bbe6</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="default_cyan">#19bbe6</color>
+
+    <color name="titlebar_back">#19bbe6</color>
+    <color name="navigation_text">#000000</color>
+    <color name ="fontColor">#202020</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="darkPurple">#322433</color>
+    <color name="hotPink">#FF4081</color>
+    <color name="turbidPurple">#6d5c6f</color>
+    <color name="black">#000000</color>
+    <color name="purple">#663e70</color>
+    <color name="turbidLightPurple">#eae8eb</color>
+    <color name="lightPurple">#efe5f0</color>
+    <color name="darkNavy">#112337</color>
+    <color name="darkGreen">#293527</color>
+    <color name="appColorPurple">#47395B</color>
+    <color name="appColorNavy">#003154</color>
+    <color name="appColorDarkNavy">#00162C</color>
+    <color name="colorGray">#808080</color>
+</resources>

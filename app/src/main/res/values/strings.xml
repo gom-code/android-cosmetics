@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">화장품 추천킹</string>
+    // 페이스북 앱 키
+    <string name="facebook_app_id">431493727574439</string>
+    <string name="fb_login_protocol_scheme">fb431493727574439</string>
+
+    <string name="activity_result">클렌징 검색 결과</string>
+    <string name="details_like_count">추천 0</string>
+    <string name="perfume_image">향수 이미지</string>
+    <string name="perfume_brand">판매처</string>
+    <string name="perfume_name">클렌징명</string>
+
+    <string name="details_btn_price">가격</string>
+    <string name="details_btn_like">추천</string>
+    <string name="details_btn_store">보관</string>
+    <string name="details_btn_revise">리뷰</string>
+    <string name="details_perfume_type">종류</string>
+    <string name="details_perfume_country">국가</string>
+    <string name="details_perfume_intro">소개</string>
+    <string name="details_flavor_info">향료 정보</string>
+    <string name="details_perfume_component">성분</string>
+</resources>

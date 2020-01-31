@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- WIFI를 통한 위치 권한(GPS) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 기지국 정보를 이용한 위치 확인 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+        </activity>
+        <!-- 구글 맵 사용 -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCVtpoMuKtjD2LGdzr5DjythvlYQPKqRIk" />
+        <!-- 페이스북 start-->
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <!-- 페이스북 end -->
+
+        <activity
+            android:name="com.example.project.LoginActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".RegistActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.project.MainActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.project.ReviewActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.project.VideoPlayerActivtit"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.project.RegistFromNaver"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.project.ReviewActivity2"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.project.activityProduct"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.project.Email"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.project.activity_my"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.example.project.free"
+            android:label="@string/app_name">
+        </activity>
+    </application>
+
+</manifest>
